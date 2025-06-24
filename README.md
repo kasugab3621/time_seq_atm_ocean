@@ -21,11 +21,13 @@
 | bottom     | XCTDの描画深度下限 m                                      | 
 | cut_top    | XCTDの表層の欠損扱いの幅（default: 2m)  | 
 | cut_bottom | XCTDの深層の欠損扱いの幅（default: 50m) | 
+| times      | 横軸の指定 |
 
 3. `time_seq_atm_ocean.py`を実行します
 
 ```bash
 python3 time_seq_atm_ocean.py
 ```
-
+以下のような図ができます．（注）こちらのサンプルデータは時刻を編集しています．
+![sample_image](https://github.com/kasugab3621/time_seq_atm_ocean/blob/main/fig/time_seq_atm_ocean/Tmp_Temp.png)
 
