@@ -1,0 +1,19 @@
+#!/bin/bash
+#20240618
+ls | while read line
+do
+  echo $line
+  #SZ071_20220620103555.csv
+
+  head=`echo $line|cut -d"_" -f1`
+  tail=`echo $line|cut -d"_" -f2`
+  tail2=`echo $tail|cut -c9-`
+  name2="${head}_20240618${tail2}"
+  echo $name2
+  echo "------------------"
+  mv $line $name2
+
+
+done
+
+
